@@ -814,11 +814,13 @@ spring:
 
 ​		可以直接在测试的时候，配置传入命令行参数
 
-​	3、虚拟机参数；
+​	3、虚拟机参数(VM options)；
 
 ​		-Dspring.profiles.active=dev
 
+​	4.Program arguments:
 
+​		----spring.profiles.active=dev 
 
 ## 6、配置文件加载位置
 
@@ -1814,7 +1816,7 @@ Spring Boot 自动配置好了SpringMVC
 
 - Custom `Favicon` support (see below).  favicon.ico
 
-  ​
+  
 
 - 自动注册了 of `Converter`, `GenericConverter`, `Formatter` beans.
 
@@ -1839,7 +1841,7 @@ public Formatter<Date> dateFormatter() {
 
     自己给容器中添加HttpMessageConverter，只需要将自己的组件注册容器中（@Bean,@Component）
 
-    ​
+    
 
 - Automatic registration of `MessageCodesResolver` (see below).定义错误代码生成规则
 
